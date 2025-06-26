@@ -7,7 +7,7 @@ img2 = cv2.imread('images/imagem-02.tif')
 
 sad = cv2.absdiff(img1, img2)
 
-_, binary = cv2.threshold(sad, 127, 255, cv2.THRESH_BINARY)
+_, binary = cv2.threshold(sad, 80, 255, cv2.THRESH_BINARY)
 
 fig, axs = plt.subplots(1, 4, figsize=(16, 5))
 
